@@ -21,7 +21,6 @@ namespace ConsoleApp4WebJob
             IRestResponse response = client.Execute(request);
             DadJoke dadJoke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
             Console.WriteLine(dadJoke.Joke);
-            Console.ReadKey();
 
         }
     }
