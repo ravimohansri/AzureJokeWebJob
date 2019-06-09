@@ -15,6 +15,7 @@ namespace ConsoleApp4WebJob
         static void Main(string[] args)
         {
             string url = "https://icanhazdadjoke.com";
+
             var client = new RestClient(url);
             var request = new RestRequest("/", Method.GET);
 
