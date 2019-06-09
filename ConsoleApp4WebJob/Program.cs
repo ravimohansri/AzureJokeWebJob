@@ -19,7 +19,7 @@ namespace ConsoleApp4WebJob
             IRestResponse response = client.Execute(request);
             //var joke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
             var joke = response.Content;
-            Console.WriteLine(joke);
+            Console.WriteLine("Hi=>" + joke);
 
         }
     }
