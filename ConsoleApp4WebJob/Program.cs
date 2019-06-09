@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using System.Net;
+using ConsoleApp4WebJob.Model;
 using RestSharp;
+using Newtonsoft.Json;
 
 namespace ConsoleApp4WebJob
 {
@@ -17,9 +19,9 @@ namespace ConsoleApp4WebJob
             var request = new RestRequest("/", Method.GET);
 
             IRestResponse response = client.Execute(request);
-            //var joke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
-            var joke = response.Content;
-            Console.WriteLine("Hi=>" + joke);
+            DadJoke dadJoke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
+            Console.WriteLine(dadJoke.Joke);
+            Console.ReadKey();
 
         }
     }
