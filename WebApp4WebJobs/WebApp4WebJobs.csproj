@@ -80,7 +80,6 @@
     </None>
     <Content Include="Properties\webjobs-list.json" />
     <None Include="Properties\PublishProfiles\AzureDemoTheCloudAppService - Web Deploy.pubxml" />
-    <Content Include="settings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
