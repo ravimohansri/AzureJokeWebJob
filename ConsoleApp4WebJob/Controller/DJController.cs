@@ -11,6 +11,7 @@ namespace ConsoleApp4WebJob.Controller
 {
     class DJController
     {
+        //Call Dad Joke Http REST get Service
         public DadJoke GetRandomDadJoke()
         {
             //Call Dad Joke Service
