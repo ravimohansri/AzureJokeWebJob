@@ -14,18 +14,13 @@ namespace ConsoleApp4WebJob
     {
         static void Main(string[] args)
         {
-            try
-            {
-                //Call Dad Joke Service View
-                DadJokeView djv = new DadJokeView();
+            
+            //Call Dad Joke Service View
+            DadJokeView djv = new DadJokeView();
 
-                //Display Dad Joke Service
-                Console.WriteLine(djv.GetRandomDadJokeView());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("WebJob Exception :" + ex.Message);
-            }
+            //Display Dad Joke Service
+            Console.WriteLine(djv.GetRandomDadJokeView());
+            
 
         }
     }
