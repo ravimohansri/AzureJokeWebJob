@@ -25,11 +25,6 @@ namespace ConsoleApp4WebJob.Model
             this.Joke = content;
             this.Status = status;
         }
-        public DadJoke()
-        {
-            this.Id = String.Empty;
-            this.Joke = String.Empty;
-            this.Status = HttpStatusCode.ExpectationFailed;
-        }
+        
     }
 }

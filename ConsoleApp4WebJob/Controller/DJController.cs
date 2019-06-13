@@ -14,24 +14,19 @@ namespace ConsoleApp4WebJob.Controller
         //Call Dad Joke Http REST get Service
         public DadJoke GetRandomDadJoke()
         {
-            try
-            { 
-                    //Call Dad Joke Service
-                    var client = new RestClient("https://icanhazdadjoke.com");
-                    var request = new RestRequest("/", Method.GET);
+           
+            //Call Dad Joke Service
+            var client = new RestClient("https://icanhazdadjoke.com");
+            var request = new RestRequest("/", Method.GET);
 
-                    //Get Response from GET Http Call
-                    IRestResponse response = client.Execute(request);
+            //Get Response from GET Http Call
+            IRestResponse response = client.Execute(request);
 
-                    //Deserialize Response
-                    DadJoke joke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
-                    return joke;
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("WebJob Exception :" + ex.Message);
-                return (new DadJoke() );
-            }
+            //Deserialize Response
+            DadJoke joke = JsonConvert.DeserializeObject<DadJoke>(response.Content);
+            return joke;
+
+            
         }
     }
 }

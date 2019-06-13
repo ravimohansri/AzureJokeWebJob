@@ -13,12 +13,12 @@ namespace ConsoleApp4WebJob.View
         public string GetRandomDadJokeView()
         {
             StringBuilder dadJokeView = new StringBuilder();
-            dadJokeView.Append("************Hi********************");
+            dadJokeView.Append("************Hi Super********************");
 
             DJController djc = new DJController();
             dadJokeView.Append(djc.GetRandomDadJoke().Joke);
 
-            dadJokeView.Append("************Bye********************");
+            dadJokeView.Append("************Bye Super********************");
 
             return dadJokeView.ToString();
 
