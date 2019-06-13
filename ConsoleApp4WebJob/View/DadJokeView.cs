@@ -12,6 +12,7 @@ namespace ConsoleApp4WebJob.View
 
         public string GetRandomDadJokeView()
         {
+            //Change the View Here
             StringBuilder dadJokeView = new StringBuilder();
             dadJokeView.Append("************Hi Super********************");
 
