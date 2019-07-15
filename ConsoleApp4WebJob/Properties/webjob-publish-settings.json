@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "http://schemastore.org/schemas/json/webjob-publish-settings.json",
-  "webJobName": "ConsoleApp4WebJob",
-  "runMode": "OnDemand",
+  "interval": 10,
   "jobRecurrenceFrequency": "Second",
-  "interval": 10
+  "runMode": "OnDemand",
+  "webJobName": "ConsoleApp4WebJob"
 }
