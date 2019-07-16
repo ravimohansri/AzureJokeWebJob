@@ -15,7 +15,7 @@ namespace ConsoleApp4WebJob.Controller
         public DadJoke GetRandomDadJoke()
         {
            
-            //Call Dad Joke Service
+            //Call Dad Joke REST Service
             var client = new RestClient("https://icanhazdadjoke.com");
             var request = new RestRequest("/", Method.GET);
 
